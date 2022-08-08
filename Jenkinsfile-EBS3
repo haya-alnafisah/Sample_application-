@@ -6,7 +6,7 @@ pipeline {
         ARTIFACT_NAME = 'haya-Belt2D2-artifacts-123456.jar'
         AWS_S3_BUCKET = 'haya-belt2d2-s3'
         AWS_EB_APP_NAME = 'devops-exame2'
-        AWS_EB_ENVIRONMENT = 'Devopsexame2-env'
+        AWS_EB_ENVIRONMENT = 'Devopsexame2-env-1'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
     } 
     stages {
