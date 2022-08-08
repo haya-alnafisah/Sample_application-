@@ -45,9 +45,9 @@ pipeline {
         stage('sonar scan'){
             steps {
                 sh "mvn clean verify sonar:sonar \
-                     -Dsonar.projectKey=onsite-haya-B2D2 \
-                     -Dsonar.host.url=http://52.23.193.18 \
-                     -Dsonar.login=sqp_0f2af56a32c62ac5a0e57277882c44077b72c134"
+  -Dsonar.projectKey=onsite-haya-B2D2 \
+  -Dsonar.host.url=http://52.23.193.18 \
+  -Dsonar.login=sqp_0f2af56a32c62ac5a0e57277882c44077b72c134"
             }
         }
 
