@@ -42,7 +42,15 @@ pipeline {
             }
         }
 
-      
+        stage('sonar scan'){
+            steps {
+                sh "mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=onsite-haya-B2D2 \
+  -Dsonar.host.url=http://34.207.184.173 \
+  -Dsonar.login=sqp_12006bc32b7df9ff19af9976a05962d3b74442af"
+            }
+        }
+
         stage('Package') {
             steps {
                 
